@@ -10,7 +10,7 @@
 string1: .asciz "\nGive me the first operand: "
 string2: .asciz "\nGive me the operation to be performed (+, -, *, /): "
 string3: .asciz "\nGive me the second operand: "
-string4: .asciz "\nThe result of %d + %d is: %d\n"
+string4: .asciz "\nThe result of %d %s %d is: "
 
 format: .asciz "%d"
 output: .asciz  "%d\n"
@@ -102,7 +102,7 @@ main:
         ldr r2, [r2]
         ldr	r3, =b          
         ldr	r3, [r3]
-        ldr  r0, =string3 
+        ldr  r0, =string4 
         bl   printf
         ldr r0,=output
         ldr	r1, =c           
