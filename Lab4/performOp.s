@@ -10,7 +10,7 @@
 string1: .asciz "\nGive me the first operand: "
 string2: .asciz "\nGive me the operation to be performed (+, -, *, /): "
 string3: .asciz "\nGive me the second operand: "
-string4: .asciz "\nThe result of %d %s %d is: "
+string4: .asciz "\nThe result of %d %c %d is: "
 
 format: .asciz "%d"
 output: .asciz  "%d\n"
